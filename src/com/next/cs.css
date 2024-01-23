@@ -1,0 +1,194 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400&family=Orbitron:wght@600&display=swap');
+
+.head1 {
+    background-color: #3b7d8b93;
+    color: #070607b9;
+    font-weight: bolder;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.5rem;
+   
+  }
+  .ma{
+    overflow-x: hidden;
+  }
+  .head1 button {
+    margin-right: 20px ;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+  }
+  
+  .main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; justify-content: space-around;
+    align-items: flex-start;
+    
+  
+  }
+  
+  .ima {
+ 
+    margin: 1% 2% 1% 2%; 
+    width: 100%; 
+    max-width: 450px; 
+    height: auto;
+    padding: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 3%;
+    background-color: rgb(202, 210, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ima img {
+    width: 100%;
+    max-width: 270px;}
+  
+  .butt {
+    display: flex;
+   
+    justify-content: space-around;
+    background:transparent;
+    border: none;
+    width: 100%; 
+    max-width: 190px;
+    margin-top: 20px; 
+  }
+  
+  .butt img {
+    width: 100%;
+    max-width: 50px; 
+  }
+  .pro{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    margin: 0%;
+    padding: 0%;
+    margin-top: 10px;
+  }
+  .det{
+    padding: none;
+    margin: none;
+
+  }
+  .det h2{
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 70px;
+    margin:0%;
+    padding: 0%;
+  }
+  .price{
+    display: flex;
+    flex-basis: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Orbitron', sans-serif;   
+  }
+  .price button{
+    margin-left: 20px;
+    background:none;
+    border: none;
+  }
+  .size{
+    width: 90%;
+display: flex;
+
+justify-content:space-around;
+
+  }
+  .size button{
+    width: 100px;
+    border-radius: 3%;
+    background: none;
+  }
+  .chart img{
+    max-width: 500px;
+   max-height: 200px;
+   padding: 15px;
+   
+  }
+.pdet{
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+}
+.pdet h4{
+  margin: 0%;
+  padding: 0%;
+}
+.pdet h5{
+  margin: 0%;
+  padding: 0%;
+}
+.pdet p{
+  margin: 0%;
+  padding: 0%;
+}
+.cart1{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  background-color: azure;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+}
+.cart1 button{
+  padding: 10px;
+  font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    border:none;
+  cursor: pointer;
+    background: none;
+}
+
+/* @media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  .butt {
+    max-width: 100%;
+  }
+
+  .price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .size {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .size button {
+    width: 40px;
+    height: 40px;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .cart1 {
+    flex-direction: row;
+  }
+
+  .cart1 button {
+    font-size: 1.2rem;
+  }
+} */
+  

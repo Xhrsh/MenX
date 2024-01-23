@@ -1,0 +1,13 @@
+.bb{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.bbs{
+    font-size: xx-large;
+
+}

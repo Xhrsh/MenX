@@ -1,0 +1,445 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400&display=swap');
+
+.head {
+    position: fixed;
+    background-color: #5e8da2d3;
+    color: #fff;
+    padding: 10px;
+    position: sticky;top: 0;
+    overflow: hidden;
+}
+
+
+.Headtag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.Headtag input[type="text"]{
+    width:40%;
+    position: relative;
+    fill-opacity: blur(80%);
+    background: transparent;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3%; 
+   margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block; 
+ 
+    
+}
+.Headtag label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.Headtag input[type="text"]:hover{
+ background-size: contain;
+ background-color: #f5eeee;
+ outline: none;
+ box-shadow: 2px 2px 2px rgba(212, 192, 192, 0.907);
+  
+}
+.Cart{
+    border: none;
+    background: transparent;
+    font-size: x-large;
+    color: #ffff;
+}
+
+
+.Headtag input[type="text"]:focus {
+    outline: none;
+    border-color: #050905;
+    font-style: normal;
+    background-color: #fcfefecf;
+    box-shadow: 5px 5px 5px rgba(229, 231, 232, 0.897);
+}
+.bodytag{
+
+    overflow-x: hidden;        
+    margin: 0;
+     padding: 0;
+}
+.offer {
+    margin: 0%;
+    padding: 20px;
+    width: 100%;
+    height: 200px; 
+    max-width: auto; 
+    max-height: auto;
+  background: url(images/about-us.jpg);
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.space{
+    margin: 0%;
+    padding: 20px;
+    width: 100%;
+    height: 20px; 
+    max-width: auto; 
+    max-height: auto;
+    background-color: rgb(215, 234, 250);
+}
+.f1{
+    z-index: -1;
+    display:flex; 
+}
+.product1{
+   background: url(images/formal.jpg);
+   margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+   
+}
+.product2:hover{
+    background: url(images/banner-1.jpg);
+    transition: 2s;
+}
+.b1{
+    padding: none;  
+    width: 100px;
+  margin-top: 350px;
+  margin-left: -30%;
+    font-family: 'Lexend Deca', sans-serif;
+  background: transparent;
+  border: 2px;
+  opacity:80%;
+  font-size: 150%;
+  color: #ba6363;
+cursor: pointer;
+}
+
+.product1 h3{
+    display: flex;
+    margin-top:66%;
+    
+}
+.product2{
+    background:url(images/weatern.jpg);
+    background-position: 50%;
+    margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+}
+.product2 h3{
+    display: flex;
+    margin-top:58%;
+}
+.b2{
+    padding: none;  
+    width: 90px;
+  margin-top: 360px;
+  margin-left:-50%;
+    font-family: 'Lexend Deca', sans-serif;
+  background: transparent;
+  border: 2px;
+  opacity:80%;
+  font-size: 150%;
+  color: #ba6363;
+}
+
+.product3{
+    background: url(./images/hoodies.webp);
+    margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+}
+.product3 h3{
+    display: flex;
+    margin-top:66%;
+}
+
+.b3{
+    padding: none;  
+    width: 90px;
+  margin-top: 350px;
+margin-left: -40%;
+    font-family: 'Lexend Deca', sans-serif;
+  background: transparent;
+  border: 2px;
+  opacity:80%;
+  font-size: 150%;
+  color: #ba6363;
+}
+.b1:hover,
+.b3:hover,.b2:hover{
+    color: rgb(164, 204, 204);
+   cursor: pointer;
+}
+.space2{
+    
+    margin: 0%;
+    padding: 15px;
+    width: 100%;
+    height: 15px; 
+    max-width: auto; 
+    max-height: auto;
+    background-color: rgb(215, 234, 250);
+}
+.f2,.f3{
+    z-index: -1;
+    display:flex;
+}
+.product4{
+    background: url(./images/tees.jpg);
+   background-position: 80px;
+    margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+}
+.product4 h3{
+    display: flex;
+    margin-top:63%;
+}
+.b4{
+    padding: none;  
+    width: 90px;
+  margin-top: 350px;
+  margin-left: -40%;
+    font-family: 'Lexend Deca', sans-serif;
+  background: transparent;
+  border: 2px;
+  opacity:80%;
+  font-size: 150%;
+  color: #ba6363;
+}
+.b4:hover{
+    color: rgb(164, 204, 204);
+    cursor: pointer;
+}
+.product5{
+    background: url(./images/banner-2.jpg);
+    margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+}
+.product5 h3{
+    display: flex;
+    margin-top:59%;
+}
+.b5,.b6,.b7,.b9{
+    padding: none;  
+    width: 90px;
+  margin-top: 350px;
+  margin-left: -50%;
+    font-family: 'Lexend Deca', sans-serif;
+  background: transparent;
+  border: 2px;
+  opacity:80%;
+  font-size: 150%;
+  color: #ba6363;
+}
+.b5:hover,
+.b6:hover,.b7:hover,
+.b8:hover,
+.b9:hover{
+    color: rgb(164, 204, 204);
+    cursor: pointer;
+}
+.product6{
+    background: url(./images/polo.jpg);
+    margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+}
+.product6 h3{
+    display: flex;
+    margin-top:69%;
+}
+.product7{
+    background: url(./images/pant.webp);
+    background-size: 100%;
+    background-position: 3%;
+    margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+}
+.product7 h3{
+    display: flex;
+    margin-top:65%;
+}
+.product8{
+    background: url(./images/shoe.webp);
+    background-size: 100%;
+    background-position: 3%;
+    margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+}.product8 h3{
+    display: flex;
+    margin-top:68%;
+}
+.b8{
+    padding: none;  
+    width: 90px;
+  margin-top: 350px;
+  margin-left:105%;
+    font-family: 'Lexend Deca', sans-serif;
+  background: transparent;
+  border: 2px;
+  opacity:80%;
+  font-size: 150%;
+  color: #ba6363;
+}
+.product9{
+    background: url(./images/sort.webp);
+    background-size: 100%;
+    background-position: 3%;
+    margin-top:10px;
+margin-left:30px;
+    width: 500px;
+    height: 440px;
+   display: flex;
+   padding: none;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 200%;
+}
+.product9 h3{
+    display: flex;
+    margin-top:68%;
+}
+.product1:hover{
+    background: url(images/pro-1.avif);
+    background-position: 3px  ;
+    transition: 2s;
+}
+.product3:hover{
+    background: url(images/pro-2.jpg);
+    transition: 2s;
+    background-position: 40px;
+
+}
+.product4:hover{
+    background: url(images/pro-3.jpg);
+    transition: 2s;
+    background-position:  5px;
+}
+.product5:hover{
+    background: url(images/pro-5.webp);
+    transition: 2s;
+    background-position:3px;
+}
+.product6:hover{
+    background: url(images/pro-6.jpg);
+    transition: 2s;
+    background-position:  0 0 ;}
+    .product9:hover{
+        background: url(images/pro-7.jpg);
+        transition: 2s;
+        background-position: 12px;
+       
+    }
+    .product8:hover{
+        background: url(images/pro-8.avif);
+        transition: 2s;
+      
+    }.product7:hover{
+        background: url(images/pro-7.webp);
+        transition: 2s;
+        background-size: 100%;
+  
+    }
+    .foot{
+        margin-top:15px;
+      
+        padding: 20px;
+        width: 100%;
+        height: 250px; 
+        max-width: auto; 
+        max-height: auto;
+        background-color: #ba6363;
+    }
+    .foot h3{
+        margin-top: 0%;
+        font-size: xx-large;
+      margin-left:45%;
+      padding:none;
+
+    }
+    .detail{
+     padding: none;
+  width: 40cap;
+  height: 180px;
+  background-color: #ffffff;
+  max-width: auto;
+  max-height: fit-content;
+  opacity:60%;
+
+    }
+    @media only screen and (max-width: 768px) {
+        .Headtag input[type="text"] {
+            width: 70%;
+        }
+    
+        .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9 {
+            width: 70px;
+            font-size: 120%;
+        }
+    
+        .product1, .product2, .product3, .product4, .product5, .product6, .product7, .product8, .product9 {
+            width: 100%;
+            margin-left: 0;
+        }
+    
+        .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9 {
+            margin-left: 0;
+        }
+    
+        .foot h3 {
+            font-size: x-large;
+            margin-left: 0;
+        }
+    
+        .detail {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
