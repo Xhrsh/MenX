@@ -1,0 +1,130 @@
+
+.admininter {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.adminlabelhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.adminbb {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.in-contain-admin {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.body2 {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.body:hover {
+    transform: scale(1.05);
+}
+
+.body img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.body:hover img {
+    opacity: 1s;
+    
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .in-contain-admin {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .in-contain-admin {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+
+/*.access{
+    width: 100%;
+    height: 100%;
+
+}
+.hoo{
+    width: 10%;
+    height: 10%;
+ 
+}
+.sh{
+    top:20px;
+    position: relative;
+    width: 100%;
+ height: 70%;
+}
+.shoe{
+ 
+    height:230px;
+width: 200px;
+content: "";
+
+
+}
+.s{
+position:relative;
+top: 10%;
+}
+.west{
+    height:190px;
+    width: 200px;
+ 
+}
+.polo{
+    height:200px;
+    width: 210px;
+
+}
+.tees{
+    height:200px;
+    width: 210px;
+  
+}.hood{
+    height:200px;
+    width: 200px;
+  
+}
+.box{
+    height:200px;
+    width: 210px;
+  
+}
+.access{
+    height:200px;
+    width: 210px;
+  
+}
+.cas{height:200px;
+    width: 210px;
+
+}*/
+

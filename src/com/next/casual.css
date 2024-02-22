@@ -15,7 +15,7 @@ label {
 }
 
 .labelhead {
-  background-color: #3b7d8b93;
+  background-color: #95ceda93;
   color: #070607b9;
   font-weight: bolder;
   padding: 8px;
@@ -63,10 +63,10 @@ label {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 100%;
-  color: rgba(9, 20, 55, 0.886);
+  color: solid black;
   font-size: large;
   font-weight: 700;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
   transition: box-shadow 0.3s ease, border 0.3s ease, transform 0.3s ease;
 }
 

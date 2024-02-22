@@ -1,13 +1,53 @@
-.bb{
-    display: flex;
-    padding: 0%;
-    margin: 0%;
-    flex-direction: column;
-    justify-content: center;
-
-
+.user-profile-container {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.bbs{
-    font-size: xx-large;
 
+.user-profile-container h2 {
+  text-align: center;
+}
+
+.user-profile-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-container form div {
+  margin-bottom: 10px;
+}
+
+.user-profile-container form label {
+  font-weight: bold;
+}
+
+.user-profile-container form input[type="text"],
+.user-profile-container form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.user-profile-container form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; 
+}
+.user-profile-container form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-profile-container form button:hover {
+  background-color: #0056b3;
 }

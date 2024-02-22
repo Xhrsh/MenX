@@ -1,15 +1,144 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Shoe(){
-    return(
-        <>
-        <header>
-            cart
-            Username
-        <label>Menx</label>
-            </header>
-            <body>
-<h1></h1>
-            </body></>
-    )
+import './casual.css'
+import { Link } from "react-router-dom"
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import sh1 from "./image/shoe1.jpg"
+import sh2 from "./image/shoe2.png"
+import sh3 from "./image/shoe3.webp"
+import sh4 from "./image/shoe4.avif"
+import sh5 from "./image/shoe5.avif"
+import sh6 from "./image/shoe6.webp"
+import sh7 from "./image/shoe7.jpg"
+import CartPage from "./Cart";
+import { myCart } from "./cartTemp";
+
+
+
+
+
+    const clothingItems = [
+        {
+          id: 91,
+          name: "Grey",
+          image:sh1,
+          price: 1200,
+          mrp:999
+        },
+        {
+          id: 92,
+          name: "Black",
+          image: sh2,
+          price: 1200,
+          mrp:1099
+        },
+        {
+          id: 93,
+          name: "red",
+          image: sh3,
+          price: 1400,
+          mrp:1199
+        },
+        {
+          id: 94,
+          name: "white",
+          image: sh4,
+          price: 1300,
+          mrp:1099
+        },
+        {
+          id: 95,
+          name: "Blue",
+          image: sh5,
+          price: 1000,
+          mrp:799
+        },
+        {
+          id: 96,
+          name: "pink",
+          image: sh6,
+          price: 1199,
+          mrp:1099
+        },
+        {
+          id: 97,
+          name: "black",
+          image: sh7,
+          price: 1599,
+          mrp:1250
+        },
+      
+      ];
+      
+
+
+ //export const cartItems = [];
+export default function Shoe() {
+  const addToCart = (item) => {
+    const isItemInCart = myCart.some((cartItem) => cartItem.id === item.id);
+
+    if (isItemInCart) {
+      console.log(myCart)
+
+      myCart.forEach((cartItem) => {
+        if (cartItem.id === item.id) {
+          cartItem.quantity += 1;
+        }
+      });
+    } else {
+      
+      myCart.push({ ...item, quantity: 1 });
+    }
+  };
+  return (
+    <>
+      <head>
+        <title>Menx</title>
+      </head>
+      <div className="userinter">
+        <div className="labelhead">
+        <Link to='/Userpage' style={{textDecoration:'none'}}><label>Home</label></Link>
+          <label><Link to='/profie' style={{textDecoration:'none'}}>Profile</Link></label>
+          <input type="search"  placeholder="search..." />
+      
+        </div>
+        <div className="overall">
+          <div className="sidebar">
+          <Link to='/casual' style={{textDecoration:'none'}}><button type="button">Casualshirt</button></Link>
+            <Link to='/westernwear' style={{textDecoration:'none'}}><button type="button">WesternWear</button></Link>
+            <Link to='/polo' style={{textDecoration:'none'}}><button type="button">Polo T-shirt</button></Link>
+            <Link to='/tees' style={{textDecoration:'none'}} ><button type="button">Oversize-tees</button></Link>
+            <Link to='/hoodies' style={{textDecoration:'none'}} ><button type="button">Hoodies</button></Link>
+            <Link to='/pant' style={{textDecoration:'none'}} ><button type="button">Pant</button></Link>
+            <Link to='/short' style={{textDecoration:'none'}} ><button type="button">Shorts</button></Link>
+            <Link to='/shoe' style={{textDecoration:'none'}} ><button type="button">Shoes</button></Link>
+            <Link to='/accessories' style={{textDecoration:'none'}} >  <button type="button">Accessories</button></Link>
+            <Link to='/cart' style={{textDecoration:'none'}} >
+            <button type="button" className="cart">Cart</button>
+            </Link>
+
+
+
+          </div>
+          <div className="in-contain">
+            {clothingItems.map((item) => (
+              <div key={item.id} className="casual-shirt">
+                <Link to={`/cs`}>
+                  <img src={item.image} alt={item.name} />
+                </Link>
+                <br />
+                <label>{item.name}</label>
+                <br />
+                <p>Price: <del>{item.price}</del> {item.mrp}</p>
+                <button type="button" onClick={() => addToCart(item)}>
+             Cart
+            </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+     
+    </>
+  );
 }

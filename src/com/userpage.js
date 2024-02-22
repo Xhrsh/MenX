@@ -12,7 +12,7 @@ export default function Userpage(){
                 MenX           
                 </label>       
                 <input type="text" ></input>      
-                <button className="Cart">Cart</button>         
+                <Link to="/cart"><button className="Cart">Cart</button>   </Link>      
         </div>
        </header>
 

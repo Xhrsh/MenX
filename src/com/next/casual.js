@@ -7,7 +7,9 @@ import cs1 from "./image/formal.jpg"
 import cs2 from "./image/cs2.webp"
 import black from './image/black.avif'
 import cs3 from './image/cs-3.jpg'
+
 import CartPage from "./Cart";
+import { myCart } from "./cartTemp";
 
 
 
@@ -24,21 +26,21 @@ import CartPage from "./Cart";
         {
           id: 2,
           name: "Black-Shirt",
-          image: black,
+          image: cs2,
           price: 1200,
-          mrp:10899
+          mrp:1099
         },
         {
           id: 3,
           name: "White-Shirt",
-          image: cs2,
+          image: cs1,
           price: 1400,
           mrp:1199
         },
         {
           id: 4,
           name: "Eggwhite-Shirt",
-          image: cs2,
+          image: black,
           price: 1300,
           mrp:1099
         },
@@ -52,30 +54,44 @@ import CartPage from "./Cart";
         {
           id: 6,
           name: "Skyblue-Shirt",
-          image: cs3,
+          image: cs2,
           price: 1199,
           mrp:1099
+        },
+        {
+          id: 6,
+          name: "Skyblue-Shirt",
+          image: black,
+          price: 1599,
+          mrp:1250
+        },
+        {
+          id: 6,
+          name: "Skyblue-Shirt",
+          image: cs3,
+          price: 1599,
+          mrp:1250
         },
       ];
       
 
 
- export const cartItems = [];
+ //export const cartItems = [];
 export default function Casual() {
   const addToCart = (item) => {
-    const isItemInCart = cartItems.some((cartItem) => cartItem.id === item.id);
+    const isItemInCart = myCart.some((cartItem) => cartItem.id === item.id);
 
     if (isItemInCart) {
-      console.log(cartItems)
+      console.log(myCart)
 
-      cartItems.forEach((cartItem) => {
+      myCart.forEach((cartItem) => {
         if (cartItem.id === item.id) {
           cartItem.quantity += 1;
         }
       });
     } else {
       
-      cartItems.push({ ...item, quantity: 1 });
+      myCart.push({ ...item, quantity: 1 });
     }
   };
   return (
@@ -85,23 +101,23 @@ export default function Casual() {
       </head>
       <div className="userinter">
         <div className="labelhead">
-          <label>Home</label>
-          <label><Link to='/profie'>Profile</Link></label>
+        <Link to='/Userpage' style={{textDecoration:'none'}}><label>Home</label></Link>
+          <label><Link to='/profie' style={{textDecoration:'none'}}>Profile</Link></label>
           <input type="search"  placeholder="search..." />
       
         </div>
         <div className="overall">
           <div className="sidebar">
-          <Link to='/casual'><button type="button">Casualshirt</button></Link>
-            <Link to='/westernwear'><button type="button">WesternWear</button></Link>
-            <Link to='/polo'><button type="button">Polo T-shirt</button></Link>
-            <button type="button">Oversize-tees</button>
-            <button type="button">Hoodies</button>
-            <button type="button">Pant</button>
-            <button type="button">Shorts</button>
-            <button type="button">Shoes</button>
-            <button type="button">Accessories</button>
-            <Link to='/cart' >
+          <Link to='/casual' style={{textDecoration:'none'}}><button type="button">Casualshirt</button></Link>
+            <Link to='/westernwear' style={{textDecoration:'none'}}><button type="button">WesternWear</button></Link>
+            <Link to='/polo' style={{textDecoration:'none'}}><button type="button">Polo T-shirt</button></Link>
+            <Link to='/tees' style={{textDecoration:'none'}} ><button type="button">Oversize-tees</button></Link>
+            <Link to='/hoodies' style={{textDecoration:'none'}} ><button type="button">Hoodies</button></Link>
+            <Link to='/pant' style={{textDecoration:'none'}} ><button type="button">Pant</button></Link>
+            <Link to='/short' style={{textDecoration:'none'}} ><button type="button">Shorts</button></Link>
+            <Link to='/shoe' style={{textDecoration:'none'}} ><button type="button">Shoes</button></Link>
+            <Link to='/accessories' style={{textDecoration:'none'}} >  <button type="button">Accessories</button></Link>
+            <Link to='/cart' style={{textDecoration:'none'}} >
             <button type="button" className="cart">Cart</button>
             </Link>
 

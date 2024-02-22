@@ -13,6 +13,8 @@ import Accessories from './com/next/accessories'
 import Cs from './com/next/cs'
 import CartPage from './com/next/Cart';
 import Profile from './com/next/profie';
+import Shoe from './com/next/shoe'
+import Adminpage from './admin/adminpage';
 import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
 function App() {
   return (
@@ -29,9 +31,13 @@ function App() {
     <Route exact path="/polo" element={<Polo/>}/>
     <Route exact path="/pant" element={<Pant/>}/>
     <Route exact path="/short" element={<Short/>}/>
+    <Route exact path="/shoe" element={<Shoe/>}/>
     <Route exact path="/cs" element={<Cs/>}/>
  <Route exact path='/profie' element={<Profile/>}></Route> 
    <Route exact path="/Cart" element={<CartPage/>}></Route>
+   <Route exact path="/adminpage" element={<Adminpage/>}>
+
+   </Route>
   </Routes>
 </Router>
 </>

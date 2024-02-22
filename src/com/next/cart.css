@@ -1,0 +1,7 @@
+/* cart.css */
+
+.card-img {
+    height: 200px; /* Set the desired fixed height */
+    object-fit: cover;
+  }
+  
